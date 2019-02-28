@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form">
+    <form action="http://nickblack.pro/send.php" method="post">
+        <fieldset>
+            <legend style="font-size: 20px">Контактная информация</legend>
+            <div class="info"><label>Имя</label><input type="text" required name="fname"></div><br>
+            <div class="info"><label>Фамилия</label><input type="text" name="sname"></div><br>
+            <div class="info"><label>Возраст</label><input type="number" name="age" min="1" max="100" step="1"></div><br>
+            <div class="info"><label>Почта</label><input type="email" name="mail"></div><br>
+            <div class="info"><label>Дата рождения</label><input type="date" name="bday"></div><br>
+            <div class="info"><label>Телефон</label><input type="text" required name="phone"></div><br>
+            <div class="info"><label>Email получателя</label><input type="email" name="mymail" required disabled value="alkushchik@gmail.com"></div><br><br>
+            <input id="submit" type="submit" value="Отослать">
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>
